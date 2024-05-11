@@ -28,7 +28,3 @@ X_test_transformed = vectorizer.transform(X_test)
 
 model = MultinomialNB()
 model.fit(X_train_transformed, y_train)
-
-new_message = "You are awarded a SiPix Digital Camera! call 09061221061 from landline. Delivery within 28days. T Cs Box177. M221BP. 2yr warranty. 150ppm. 16 . p på£3.99"  # Replace this with any message you want to classify
-label, confidence = predict_message(model, vectorizer, new_message)
-print(f"The message is predicted as {label} with {confidence * 100:.2f}% confidence.")
